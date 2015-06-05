@@ -19,9 +19,9 @@
                  [ring/ring-core "1.3.2" :exclusions [commons-codec]]
                  [pathetic "0.5.1"]
                  [bidi "1.18.11" :exclusions [org.clojure/clojurescript]]
-                 [liberator "0.12.2"]
-                 [com.cognitect/transit-clj "0.8.271"]
+                 [liberator "0.13"]
                  [io.clojure/liberator-transit "0.3.0"]
+                 [ring-twp "0.1-SNAPSHOT"]
                  [pandect "0.5.2"]
                  [clj-time "0.6.0"]
                  [clj-stacktrace "0.2.7"]
@@ -35,7 +35,8 @@
                              [com.datomic/datomic-free "0.9.5173"
                               :exclusions [org.slf4j/slf4j-nop commons-codec
                                            com.amazonaws/aws-java-sdk
-                                           joda-time]]]
+                                           joda-time]]
+                             [ring/ring-mock "0.2.0"]]
               :global-vars {*print-length* 20}}
 
              :datomic-free
